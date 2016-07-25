@@ -46,43 +46,53 @@ Developers are used to using lowercase names (as in XHTML)
 Lowercase look cleaner
 Lowercase are easier to write
 Bad:
+```
 <SECTION> 
   <p>This is a paragraph.</p>
 </SECTION>
-Very Bad:
+```
+Very Bad:´
+```
 <Section> 
   <p>This is a paragraph.</p>
 </SECTION>
+```
 Good:
+```
 <section> 
   <p>This is a paragraph.</p>
 </section>
+```
 Close All HTML Elements
 In HTML5, you don't have to close all elements (for example the <p> element).
 
 We recommend closing all HTML elements:
 
 Looking bad:
-
+```
 <section>
   <p>This is a paragraph.
   <p>This is a paragraph.
 </section>
+```
 Looking good:
-
+```
 <section>
   <p>This is a paragraph.</p>
   <p>This is a paragraph.</p>
 </section>
+```
 Close Empty HTML Elements
 In HTML5, it is optional to close empty elements.
 
 This is allowed:
-
+```
 <meta charset="utf-8">
+```
 This is also allowed:
-
+```
 <meta charset="utf-8" />
+```
 The slash (/) is required in XHTML and XML.
 
 If you expect XML software to access your page, it might be a good idea to keep it.
@@ -97,11 +107,14 @@ Developers are used to using lowercase names (as in XHTML)
 Lowercase look cleaner
 Lowercase are easier to write
 Looking bad:
-
+```
 <div CLASS="menu">
+```
 Looking good:
 
+```
 <div class="menu">
+```
 Quote Attribute Values
 HTML5 allows attribute values without quotes.
 
@@ -112,24 +125,36 @@ Mixing styles is never good
 Quoted values are easier to read
 This will not work, because the value contains spaces:
 
+```
 <table class=table striped>
+```
 This will work:
 
+```
 <table class="table striped">
+```
 Image Attributes
 Always use the alt attribute with images. It is important when the image cannot be viewed.
 
+```
 <img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+```
 Always define image size. It reduces flickering because the browser can reserve space for images before they are loaded.
 
+```
 <img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+```
 Spaces and Equal Signs
 Spaces around equal signs is legal:
 
+```
 <link rel = "stylesheet" href = "styles.css">
+```
 But space-less is easier to read, and groups entities better together:
 
+```
 <link rel="stylesheet" href="styles.css">
+```
 Avoid Long Code Lines
 When using an HTML editor, it is inconvenient to scroll right and left to read the HTML code.
 
@@ -145,6 +170,7 @@ For readability, add 2 spaces of indentation. Do not use TAB.
 Do not use unnecessary blank lines and indentation. It is not necessary to use blank lines between short and related items. It is not necessary to indent every element:
 
 Unnecessary:
+```
 <body>
 
   <h1>Famous Cities</h1>
@@ -159,7 +185,9 @@ Unnecessary:
   </p>
 
 </body>
+```
 Better:
+```
 <body>
 
 <h1>Famous Cities</h1>
@@ -171,7 +199,9 @@ It is the seat of the Japanese government and the Imperial Palace,
 and the home of the Japanese Imperial Family.</p>
 
 </body>
+```
 Table Example:
+```
 <table>
   <tr>
     <th>Name</th>
@@ -186,18 +216,22 @@ Table Example:
     <td>Description of B</td>
   </tr>
 </table>
+```
 List Example:
+```
 <ol>
   <li>London</li>
   <li>Paris</li>
   <li>Tokyo</li>
 </ol>
+```
 Omitting <html> and <body>?
 In the HTML5 standard, the <html> tag and the <body> tag can be omitted.
 
 The following code will validate as HTML5:
 
 Example
+```
 <!DOCTYPE html>
 <head>
   <title>Page Title</title>
@@ -205,13 +239,16 @@ Example
 
 <h1>This is a heading</h1>
 <p>This is a paragraph.</p>
+```
 Try it Yourself »
 We do not recommend omitting the <html> and <body> tags.
 
 The <html> element is the document root. It is the recommended place for specifying the page language:
 
+```
 <!DOCTYPE html>
 <html lang="en-US">
+```
 Declaring a language is important for accessibility applications (screen readers) and search engines.
 
 Omitting <html> or <body> can crash DOM and XML software.
@@ -226,9 +263,12 @@ By default, browsers will add all elements before <body>, to a default <head> el
 You can reduce the complexity of HTML, by omitting the <head> tag:
 
 Example
+
+```
 <!DOCTYPE html>
 <html>
 <title>Page Title</title>
+
 
 <body>
   <h1>This is a heading</h1>
@@ -236,21 +276,26 @@ Example
 </body>
 
 </html>
+```
 Try it Yourself »
 Omitting tags is unfamiliar to web developers. It needs time to be established as a guideline.
 
 Meta Data
 The <title> element is required in HTML5. Make the title as meaningful as possible:
 
+```
 <title>HTML5 Syntax and Coding Style</title>
+```
 To ensure proper interpretation, and correct search engine indexing, both the language and the character encoding should be defined as early as possible in a document:
 
+```
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <title>HTML5 Syntax and Coding Style</title>
 </head>
+```
 HTML Comments
 Short comments should be written on one line, with a space after <!-- and a space before -->:
 
@@ -266,18 +311,24 @@ Long comments are easier to observe, if they are indented 2 spaces.
 Style Sheets
 Use simple syntax for linking style sheets (the type attribute is not necessary):
 
+```
 <link rel="stylesheet" href="styles.css">
+```
 Short rules can be written compressed, on one line, like this:
 
+```
 p.into {font-family: Verdana; font-size: 16em;}
+```
 Long rules should be written over multiple lines:
 
+```
 body {
   background-color: lightgrey;
   font-family: "Arial Black", Helvetica, sans-serif;
   font-size: 16em;
   color: black;
 }
+```
 Place the opening bracket on the same line as the selector.
 Use one space before the opening bracket.
 Use 2 spaces of indentation.
@@ -292,16 +343,20 @@ Adding a space after a comma, or a semicolon, is a general rule in all types of 
 Loading JavaScript in HTML
 Use simple syntax for loading external scripts (the type attribute is not necessary):
 
+```
 <script src="myscript.js">
+```
 Accessing HTML Elements with JavaScript
 A consequence of using "untidy" HTML styles, might result in JavaScript errors.
 
 These two JavaScript statements will produce different results:
 
 Example
+```
 var obj = getElementById("Demo")
 
 var obj = getElementById("demo")
+```
 Try it Yourself »
 If possible, use the same naming convention (as JavaScript) in HTML.
 
