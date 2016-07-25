@@ -280,8 +280,8 @@ Example
 Try it Yourself »
 Omitting tags is unfamiliar to web developers. It needs time to be established as a guideline.
 
-Meta Data
-The <title> element is required in HTML5. Make the title as meaningful as possible:
+Meta Data »
+The <title> element is required in HTML5. Make the title as meaningful as possible :
 
 ```
 <title>HTML5 Syntax and Coding Style</title>
@@ -357,7 +357,8 @@ var obj = getElementById("Demo")
 
 var obj = getElementById("demo")
 ```
-Try it Yourself »
+
+Try it Yourself
 If possible, use the same naming convention (as JavaScript) in HTML.
 
 Visit the JavaScript Style Guide.
